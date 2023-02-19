@@ -32,7 +32,7 @@ async function chatReply(
     return sendResponse({ type: 'Fail', message: 'Message is empty' })
 
   try {
-    let options: SendMessageOptions = { timeoutMs: 30 * 1000 }
+    let options: SendMessageOptions = { timeoutMs: 60 * 1000 }
 
     if (lastContext)
       options = { ...lastContext }
